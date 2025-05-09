@@ -37,7 +37,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (dob>3){
+    if (dob<3){
       return alert("Date should be above 3");
     } 
     if(!dob) return alert("Date of birth is required");
